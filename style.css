@@ -1,0 +1,270 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.notify {
+  width: 50rem;
+  height: 25rem;
+  background-color: #007bb4;
+  border-radius: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20%;
+  margin: auto;
+  /* border: 2px solid black;    */
+  z-index: 2;
+
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.close-not {
+  text-align: end;
+  padding: 1rem 1.5rem;
+}
+
+.close-not img {
+  width: 1.8rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.notify .not-msg h1 {
+  font-size: 4rem;
+  margin: 2rem 1rem;
+}
+
+.notify .not-msg p {
+  font-size: 2rem;
+  color: white;
+  margin: 2rem 1rem;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: #0085ad33;
+  border: 2px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.home .home-container {
+  height: 130vh;
+  background-image: url("https://voosh.in/static/media/landing_bg.da8497cd24d321282c0d.webp");
+  background-size: cover;
+  background-position-y: -15.5rem;
+}
+
+.home {
+  position: relative;
+}
+
+.home .logo img {
+  width: 15.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+
+.home-container .title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 25rem;
+  left: 7.7rem;
+  width: 95rem;
+  /* border: 2px solid black; */
+  font-size: 4.8rem;
+}
+.home-container .sub-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 40.8rem;
+  left: 8.2rem;
+  width: 95rem;
+  /* border: 2px solid black; */
+  font-size: 2.1rem;
+}
+.home-container .reg-btn {
+  font-family: sans-serif;
+  display: inline-block;
+  width: auto;
+  padding: 1.58rem 1.5rem;
+  background-color: #2d66f5;
+  /* border: 2px solid black; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 53.5rem;
+  left: 7.5rem;
+}
+
+.home-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-images {
+  position: absolute;
+  top: 4.1rem;
+  right: 0rem;
+}
+
+.right-images .lines3 {
+  width: 3.88rem;
+  position: absolute;
+  top: -2.8rem;
+  left: -3.8rem;
+}
+
+.right-images .dashboard {
+  width: 86.5rem;
+}
+
+.arrow-img {
+  position: absolute;
+  top: 59.5rem;
+  left: 12.5rem;
+}
+
+.arrow-img img {
+  width: 18.5rem;
+}
+
+.medias-all .media {
+  width: 9.6rem;
+  position: absolute;
+}
+.grubhub {
+  position: absolute;
+  top: 1.5rem;
+  right: 55.8rem;
+}
+.swiggy {
+  position: absolute;
+  top: 72.2%;
+  left: 26.8rem;
+}
+.ubereats {
+  position: absolute;
+  top: 3.5rem;
+  right: 27rem;
+}
+.zomato {
+  position: absolute;
+  top: 66%;
+  left: 98.4rem;
+}
+
+.amazon {
+  position: absolute;
+  top: 36%;
+  left: 65.3rem;
+}
+
+.doordash {
+  position: absolute;
+  top: 38rem;
+  right: 78.8rem;
+}
+.demo .demo-container {
+  height: 100vh;
+  background-image: url("https://voosh.in/static/media/book_now_bg.e9f9294653918137cd78.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.demo-container .demo-text {
+  font-size: 4rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+.demo-form {
+  /* border: 2px solid red; */
+  border-radius: 1rem;
+  width: 60rem;
+  height: auto;
+  background-color: white;
+}
+
+.demo-form form {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-label {
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.f-label::after {
+  content: " *";
+  color: red;
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translate(0.3rem, 0.1rem);
+}
+
+.demo-form form input {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  display: block;
+  width: 55rem;
+  height: 4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.demo-form form button {
+  width: 55rem;
+  padding: 1.8rem 0rem;
+  background-color: #2d66f5;
+  color: White;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
